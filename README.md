@@ -34,6 +34,11 @@ cd pysheet-lite
 Install dependencies: 
 pip install fastapi uvicorn gspread oauth2client
 
+# requirements.txt:
+fastapi
+uvicorn
+gspread
+oauth2client
 
 
  How to Run: 
@@ -42,6 +47,7 @@ pip install fastapi uvicorn gspread oauth2client
 
   Endpoints: GET /data/{sheet_name} : Returns JSON data from a Google Sheet. : GET http://localhost:8000/data/sample-sheet
 → { "sheet": "sample-sheet", "data": [...] }
+
 
 
 
