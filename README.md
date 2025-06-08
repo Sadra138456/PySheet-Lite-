@@ -45,4 +45,14 @@ pip install fastapi uvicorn gspread oauth2client
 
 
 
-  
+
+  .gitignore:
+  __pycache__
+*.pyc
+.env
+credentials.json
+*.log
+*.tmp
+*.db
+*.csv
+*.DS_Store
