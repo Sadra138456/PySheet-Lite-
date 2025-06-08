@@ -40,29 +40,9 @@ pip install fastapi uvicorn gspread oauth2client
  uvicorn main:app --reload
 
 
-  Endpoints: GET /data/{sheet_name} : Returns JSON data from a Google Sheet. 
+  Endpoints: GET /data/{sheet_name} : Returns JSON data from a Google Sheet. : GET http://localhost:8000/data/sample-sheet
+→ { "sheet": "sample-sheet", "data": [...] }
 
 
 
-
-
-project structure
-
-  pysheet-lite/
-│
-├── main.py                 # FastAPI entry point
-├── models/
-│   ├── __init__.py
-│   └── google_sheet.py     # Google Sheets reader
-│
-├── services/
-│   ├── __init__.py
-│   └── ai_analyzer.py      # Keyword-based classifier
-│
-├── templates/
-│   └── index.html          # Simple UI for testing
-│
-├── README.md               # Documentation
-├── requirements.txt        # Dependencies
-└── .gitignore              # Ignore sensitive files
   
